@@ -1,0 +1,6 @@
+Goal: As a user, I want to either maximize strength or minimize print time while having the best strength 
+
+Design: 2^4 factorial design
+	Factors: Number of outer shells, Infill %, Pattern, Nozzle Diameter (0.4 and 0.6)
+Test with common filaments: PLA, PLA+, PETG
+
