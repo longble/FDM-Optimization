@@ -1,6 +1,21 @@
-Goal: As a user, I want to either maximize strength or minimize print time while having the best strength 
+Objective: Optimize 3D print time while maximizing strength.
 
-Design: 2^4 factorial design
-	Factors: Number of outer shells, Infill %, Pattern, Nozzle Diameter (0.4 and 0.6)
-Test with common filaments: PLA, PLA+, PETG
+Repsonses: Print Time (Minutes), 
+	   Stress (Pa)
 
+Factors: Number of outer shells (2-5)
+	 Infill % (15%-85%)
+	 Infill Pattern (Honeycomb, Gyroid) 
+	 Extrusion Temperature (215-230C)
+	 Nozzle Diameter (0.4mm, 0.6mm)
+
+Standard layer height: 0.2mm
+Standard Filament: PLA
+
+Design Options: Full Factorial
+		2^5 factorial design
+
+		2^5-1 Resolution V
+
+		2^5-2 Resolution III
+	
