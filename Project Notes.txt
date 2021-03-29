@@ -1,6 +1,6 @@
 Objective: Optimize 3D print time while maximizing strength.
 
-Repsonses: Print Time (Minutes), 
+Responses: Print Time (Minutes), 
 	   Stress (Pa)
 
 Factors: Number of outer shells (2-5)
@@ -10,7 +10,9 @@ Factors: Number of outer shells (2-5)
 	 Nozzle Diameter (0.4mm, 0.6mm)
 
 Standard layer height: 0.2mm
-Standard Filament: PLA
+Standard Filament: PLA 
+Filament will be dried at 55C for 24 hours prior to printing.
+Speed of tensile testing: 5mm/min
 
 Design Options: Full Factorial
 		2^5 factorial design
