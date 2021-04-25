@@ -1,0 +1,231 @@
+<!DOCTYPE DEXXMLDoc SYSTEM "DEXXMLDoc.DTD">
+<DEXXMLDoc name="MAE 595 Project.dxpx" creator="DX13" version="13.0.3.0">
+<designInfo studyType="Factorial" studySubType="Randomized" designType="Factorial2" noOfRuns="16" noOfFactors="4" noOfResponses="2" noOfAnalyses="2">
+<designNotes>This data file created by Design-Expert 13.</designNotes>
+</designInfo>
+<blockInfo>
+<block code="0" name=".4 mm Nozzle Diameter"/>
+<block code="1" name=".6 mm nozzle Diameter"/>
+</blockInfo>
+<factorInfo>
+<factor id="A" name="Number of Outer Shells" unit="" type="Numeric" uuid="e0ba1c03-fb01-0000-c05d-1203fb010000">
+<numeric format="General" low="2" high="5" stdDev="0"/>
+</factor>
+<factor id="B" name="Infill Percentage" unit="%" type="Numeric" uuid="e0ba1c03-fb01-0000-c05d-1203fb010000">
+<numeric format="General" low="15" high="85" stdDev="0"/>
+</factor>
+<factor id="C" name="Infill Pattern" unit="" type="Categoric" uuid="e0ba1c03-fb01-0000-c05d-1203fb010000">
+<categoric noOfLevels="2" contrasts="Sum">
+<level name="Cubic"/>
+<level name="Gyroid"/>
+</categoric>
+</factor>
+<factor id="D" name="Extrusion Temperature" unit="*C" type="Numeric" uuid="f85d1203-fb01-0000-0000-000000000000">
+<numeric format="General" low="215" high="230" stdDev="0"/>
+</factor>
+</factorInfo>
+<constraintInfo/>
+<responseInfo>
+<response id="1" name="Print Time" unit="Minutes" type="Normal" format="General" responseUuId="be1e6901-6da4-41c0-b727-bd4f906b7f8f"/>
+<response id="2" name="Stress" unit="Pa" type="Normal" format="General" responseUuId="43eb4dfb-a300-4a60-80a7-cc5f3c0f343e"/>
+</responseInfo>
+<guiState>
+<designLayout>
+<visibleColumns>
+<column type="stdorder">
+<width>25</width>
+</column>
+<column type="block">
+<width>128</width>
+</column>
+<column type="runorder">
+<width>35</width>
+</column>
+<column id="A" type="factor">
+<width>94</width>
+</column>
+<column id="B" type="factor">
+<width>94</width>
+</column>
+<column id="C" type="factor">
+<width>94</width>
+</column>
+<column id="D" type="factor">
+<width>94</width>
+</column>
+<column id="1" type="response">
+<width>94</width>
+</column>
+<column id="2" type="response">
+<width>94</width>
+</column>
+</visibleColumns>
+</designLayout>
+<perspectives>
+<report name="main_frame" width="1024" height="768">layout2|name=main_toolbar;caption=Toolbar;state=2106108;dir=1;layer=10;row=0;pos=0;prop=100000;bestw=441;besth=37;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=start_screen;caption=;state=258;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=0;besth=0;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=navigation_tree;caption=Navigation Pane;state=5628;dir=4;layer=1;row=0;pos=0;prop=100000;bestw=200;besth=600;minw=40;minh=40;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=node_view;caption=;state=4352;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=16;besth=16;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Design Tool;caption=;state=2110204;dir=1;layer=10;row=0;pos=443;prop=100000;bestw=550;besth=37;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Design Properties;caption=Design Properties;state=2098684;dir=4;layer=1;row=0;pos=1;prop=100000;bestw=200;besth=300;minw=40;minh=40;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=217;floath=340|name=History;caption=History;state=2098686;dir=2;layer=1;row=0;pos=0;prop=100000;bestw=200;besth=300;minw=40;minh=40;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=217;floath=340|dock_size(1,10,0)=39|dock_size(5,0,0)=10|dock_size(4,1,0)=200|</report>
+</perspectives>
+</guiState>
+<designModel terms="16">
+<designTerm id="0" coef="1" term="Intercept"/>
+<designTerm id="1" coef="1" term="A"/>
+<designTerm id="2" coef="1" term="B"/>
+<designTerm id="3" coef="1" term="C"/>
+<designTerm id="4" coef="1" term="D"/>
+<designTerm id="5" coef="1" term="AB"/>
+<designTerm id="6" coef="1" term="AC"/>
+<designTerm id="7" coef="1" term="AD"/>
+<designTerm id="8" coef="1" term="BC"/>
+<designTerm id="9" coef="1" term="BD"/>
+<designTerm id="10" coef="1" term="CD"/>
+<designTerm id="11" coef="1" term="ABC"/>
+<designTerm id="12" coef="1" term="ABD"/>
+<designTerm id="13" coef="1" term="ACD"/>
+<designTerm id="14" coef="1" term="BCD"/>
+<designTerm id="15" coef="1" term="ABCD"/>
+</designModel>
+<run stdNo="12" dsnId="13" runNo="1" blockNo="0" blockName=".4 mm Nozzle Diameter" pointId="11" pointName="Factorial" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">5</facActual>
+<facActual id="B">85</facActual>
+<facActual id="C">Cubic</facActual>
+<facActual id="D">230</facActual>
+<resVal id="1">Missing</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="3" dsnId="4" runNo="2" blockNo="0" blockName=".4 mm Nozzle Diameter" pointId="11" pointName="Factorial" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">2</facActual>
+<facActual id="B">85</facActual>
+<facActual id="C">Cubic</facActual>
+<facActual id="D">215</facActual>
+<resVal id="1">Missing</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="5" dsnId="6" runNo="3" blockNo="0" blockName=".4 mm Nozzle Diameter" pointId="11" pointName="Factorial" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">2</facActual>
+<facActual id="B">15</facActual>
+<facActual id="C">Gyroid</facActual>
+<facActual id="D">215</facActual>
+<resVal id="1">Missing</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="14" dsnId="15" runNo="4" blockNo="0" blockName=".4 mm Nozzle Diameter" pointId="11" pointName="Factorial" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">5</facActual>
+<facActual id="B">15</facActual>
+<facActual id="C">Gyroid</facActual>
+<facActual id="D">230</facActual>
+<resVal id="1">Missing</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="9" dsnId="10" runNo="5" blockNo="0" blockName=".4 mm Nozzle Diameter" pointId="11" pointName="Factorial" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">2</facActual>
+<facActual id="B">15</facActual>
+<facActual id="C">Cubic</facActual>
+<facActual id="D">230</facActual>
+<resVal id="1">Missing</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="8" dsnId="9" runNo="6" blockNo="0" blockName=".4 mm Nozzle Diameter" pointId="11" pointName="Factorial" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">5</facActual>
+<facActual id="B">85</facActual>
+<facActual id="C">Gyroid</facActual>
+<facActual id="D">215</facActual>
+<resVal id="1">Missing</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="15" dsnId="16" runNo="7" blockNo="0" blockName=".4 mm Nozzle Diameter" pointId="11" pointName="Factorial" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">2</facActual>
+<facActual id="B">85</facActual>
+<facActual id="C">Gyroid</facActual>
+<facActual id="D">230</facActual>
+<resVal id="1">Missing</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="2" dsnId="3" runNo="8" blockNo="0" blockName=".4 mm Nozzle Diameter" pointId="11" pointName="Factorial" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">5</facActual>
+<facActual id="B">15</facActual>
+<facActual id="C">Cubic</facActual>
+<facActual id="D">215</facActual>
+<resVal id="1">Missing</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="10" dsnId="11" runNo="9" blockNo="1" blockName=".6 mm nozzle Diameter" pointId="11" pointName="Factorial" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">5</facActual>
+<facActual id="B">15</facActual>
+<facActual id="C">Cubic</facActual>
+<facActual id="D">230</facActual>
+<resVal id="1">Missing</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="4" dsnId="5" runNo="10" blockNo="1" blockName=".6 mm nozzle Diameter" pointId="11" pointName="Factorial" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">5</facActual>
+<facActual id="B">85</facActual>
+<facActual id="C">Cubic</facActual>
+<facActual id="D">215</facActual>
+<resVal id="1">Missing</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="7" dsnId="8" runNo="11" blockNo="1" blockName=".6 mm nozzle Diameter" pointId="11" pointName="Factorial" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">2</facActual>
+<facActual id="B">85</facActual>
+<facActual id="C">Gyroid</facActual>
+<facActual id="D">215</facActual>
+<resVal id="1">Missing</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="16" dsnId="17" runNo="12" blockNo="1" blockName=".6 mm nozzle Diameter" pointId="11" pointName="Factorial" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">5</facActual>
+<facActual id="B">85</facActual>
+<facActual id="C">Gyroid</facActual>
+<facActual id="D">230</facActual>
+<resVal id="1">Missing</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="11" dsnId="12" runNo="13" blockNo="1" blockName=".6 mm nozzle Diameter" pointId="11" pointName="Factorial" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">2</facActual>
+<facActual id="B">85</facActual>
+<facActual id="C">Cubic</facActual>
+<facActual id="D">230</facActual>
+<resVal id="1">Missing</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="1" dsnId="2" runNo="14" blockNo="1" blockName=".6 mm nozzle Diameter" pointId="11" pointName="Factorial" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">2</facActual>
+<facActual id="B">15</facActual>
+<facActual id="C">Cubic</facActual>
+<facActual id="D">215</facActual>
+<resVal id="1">Missing</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="6" dsnId="7" runNo="15" blockNo="1" blockName=".6 mm nozzle Diameter" pointId="11" pointName="Factorial" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">5</facActual>
+<facActual id="B">15</facActual>
+<facActual id="C">Gyroid</facActual>
+<facActual id="D">215</facActual>
+<resVal id="1">Missing</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="13" dsnId="14" runNo="16" blockNo="1" blockName=".6 mm nozzle Diameter" pointId="11" pointName="Factorial" buildPointId="5" buildPointName="NA" note="" rowStatus="Normal">
+<facActual id="A">2</facActual>
+<facActual id="B">15</facActual>
+<facActual id="C">Gyroid</facActual>
+<facActual id="D">230</facActual>
+<resVal id="1">Missing</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<responseModel rmId="1" analysisUuId="739ad382-7fe0-4607-9114-b49452fe36b7" name="Print Time">
+<response id="1" responseUuId="be1e6901-6da4-41c0-b727-bd4f906b7f8f" modelBase="Factorial" stdDevSource="ANOVA" stdDev="Missing"/>
+<transform id="0" name="None" successLevel="1"/>
+</responseModel>
+<responseModel rmId="2" analysisUuId="b0fc4d78-81ea-42e6-8f53-b73dc7038916" name="Stress">
+<response id="2" responseUuId="43eb4dfb-a300-4a60-80a7-cc5f3c0f343e" modelBase="Factorial" stdDevSource="ANOVA" stdDev="Missing"/>
+<transform id="0" name="None" successLevel="1"/>
+</responseModel>
+<optimization models="8">
+<criteria modType="Factor" id="1" goal="InRange" type="Numeric" target="3.5" limitLow="2" limitHigh="5" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Actual" scale="Transform" displayScale="Original"/>
+<criteria modType="Factor" id="2" goal="InRange" type="Numeric" target="50" limitLow="15" limitHigh="85" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Actual" scale="Transform" displayScale="Original"/>
+<criteria modType="Factor" id="3" goal="InRange" type="Categoric" target="0" limitLow="0" limitHigh="1" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Actual" scale="Transform" displayScale="Original"/>
+<criteria modType="Factor" id="4" goal="InRange" type="Numeric" target="222.5" limitLow="215" limitHigh="230" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Actual" scale="Transform" displayScale="Original"/>
+</optimization>
+<buildInfo noOfCenterPoints="0" noOfFullFactors="4" baseFactors="ABCD" noOfReplicates="1" buildTime="0">
+<blockGenerator generator="ABCD"/>
+</buildInfo>
+</DEXXMLDoc>

@@ -1,0 +1,534 @@
+<!DOCTYPE DEXXMLDoc SYSTEM "DEXXMLDoc.DTD">
+<DEXXMLDoc name="FDM_OptimizationA.dxpx" creator="DX13" version="13.0.3.0">
+<designInfo studyType="Factorial" studySubType="SplitPlot" designType="Optimal" noOfRuns="25" noOfFactors="5" noOfResponses="2" noOfAnalyses="2">
+<designNotes>This data file created by Design-Expert 13.</designNotes>
+</designInfo>
+<blockInfo>
+<block code="0" name="Block 1"/>
+</blockInfo>
+<factorInfo>
+<factor id="A" name="Shells" unit="" type="Categoric" uuid="ca314a45-0a3a-4a14-8a34-92b4246ec7ce">
+<categoric noOfLevels="2" contrasts="Sum">
+<level name="2"/>
+<level name="5"/>
+</categoric>
+</factor>
+<factor id="B" name="Infill %" unit="%" type="Categoric" uuid="3331f235-e3db-474d-b0d1-97b7f4f26639">
+<categoric noOfLevels="2" contrasts="Sum">
+<level name="15"/>
+<level name="85"/>
+</categoric>
+</factor>
+<factor id="C" name="Extrusion Temp." unit="C" type="Categoric" uuid="babdb0e6-f81a-40ea-89b8-0ed7718da1c0">
+<categoric noOfLevels="2" contrasts="Sum">
+<level name="215"/>
+<level name="235"/>
+</categoric>
+</factor>
+<factor id="D" name="Infill Pattern" unit="" type="Categoric" uuid="c5814999-a31e-44b0-96fd-771cfc0bbb0a">
+<categoric noOfLevels="3" contrasts="Sum">
+<level name="Gyroid"/>
+<level name="Cubic"/>
+<level name="3D Honeycomb"/>
+</categoric>
+</factor>
+<factor id="e" name="Nozzle Dia." unit="mm" changes="Hard" type="Categoric" uuid="f82ab9da-ca94-4bf4-bfa2-ba3e11ac0412">
+<categoric noOfLevels="2" contrasts="Sum">
+<level name="0.4"/>
+<level name="0.6"/>
+</categoric>
+</factor>
+</factorInfo>
+<constraintInfo/>
+<responseInfo>
+<response id="1" name="Print Time" unit="minutes" type="Normal" format="General" responseUuId="c8053a03-f76f-4310-827d-b2e92bab21a2"/>
+<response id="2" name="Ultimate Strength" unit="Pa" type="Normal" format="General" responseUuId="a487bd57-afd7-47bd-9d1a-cd81d40171a7"/>
+</responseInfo>
+<guiState>
+<designLayout>
+<visibleColumns>
+<column type="group">
+<width>63</width>
+</column>
+<column type="runorder">
+<width>35</width>
+</column>
+<column id="A" type="factor">
+<width>95</width>
+</column>
+<column id="B" type="factor">
+<width>95</width>
+</column>
+<column id="C" type="factor">
+<width>95</width>
+</column>
+<column id="D" type="factor">
+<width>95</width>
+</column>
+<column id="e" type="factor">
+<width>95</width>
+</column>
+<column id="1" type="response">
+<width>95</width>
+</column>
+<column id="2" type="response">
+<width>95</width>
+</column>
+</visibleColumns>
+</designLayout>
+<graphSettings>
+<graphArea name="GraphColumns">
+<selectedGraph>0</selectedGraph>
+<colorBy type="runOrder"/>
+<axisX type="factor" index="0"/>
+<axisY type="response" index="0"/>
+<axisZ type="none"/>
+<axisX_Histogram type="response" index="0"/>
+<axisX_BoxPlot type="none"/>
+<axisY_BoxPlot type="response" index="0"/>
+<histograms/>
+<legend key="Scatter2D" title="Design-Expert® Software">
+<dock type="TopLeft"/>
+<showItems>
+<showItem>Response</showItem>
+<showItem>Info</showItem>
+<showItem>Lambda</showItem>
+<showItem>RecommendedTransform</showItem>
+<showItem>ColorGradient</showItem>
+<showItem>Data</showItem>
+<showItem>PointInfo</showItem>
+</showItems>
+</legend>
+</graphArea>
+<graphArea name="EffectsHTC" graph="0"/>
+<graphArea name="EffectsHTC" graph="1"/>
+<graphArea name="EffectsHTC" graph="2"/>
+<graphArea name="EffectsETC" graph="0"/>
+<graphArea name="EffectsETC" graph="1"/>
+<graphArea name="EffectsETC" graph="2"/>
+<graphArea name="Diagnostics" index="0">
+<legend key="NormalResidualsGraph" title="Design-Expert® Software">
+<dock type="TopLeft"/>
+<showItems>
+<showItem>Response</showItem>
+<showItem>Info</showItem>
+<showItem>ColorGradient</showItem>
+<showItem>Data</showItem>
+<showItem>PointInfo</showItem>
+</showItems>
+</legend>
+<legend key="ResVsPredGraph" title="Design-Expert® Software">
+<dock type="TopLeft"/>
+<showItems>
+<showItem>Response</showItem>
+<showItem>Info</showItem>
+<showItem>ColorGradient</showItem>
+<showItem>Data</showItem>
+<showItem>PointInfo</showItem>
+</showItems>
+</legend>
+<legend key="ResVsRunGraph" title="Design-Expert® Software">
+<dock type="TopLeft"/>
+<showItems>
+<showItem>Response</showItem>
+<showItem>Info</showItem>
+<showItem>ColorGradient</showItem>
+<showItem>Data</showItem>
+<showItem>PointInfo</showItem>
+</showItems>
+</legend>
+<legend key="PredVsActualGraph" title="Design-Expert® Software">
+<dock type="TopLeft"/>
+<showItems>
+<showItem>Response</showItem>
+<showItem>Info</showItem>
+<showItem>ColorGradient</showItem>
+<showItem>Data</showItem>
+<showItem>PointInfo</showItem>
+</showItems>
+</legend>
+<legend key="BoxCoxGraph" title="Design-Expert® Software">
+<dock type="TopLeft"/>
+<showItems>
+<showItem>Response</showItem>
+<showItem>Info</showItem>
+<showItem>Lambda</showItem>
+<showItem>RecommendedTransform</showItem>
+<showItem>ColorGradient</showItem>
+<showItem>Data</showItem>
+<showItem>PointInfo</showItem>
+</showItems>
+</legend>
+<legend key="CooksDistanceGraph" title="Design-Expert® Software">
+<dock type="TopLeft"/>
+<showItems>
+<showItem>Response</showItem>
+<showItem>Info</showItem>
+<showItem>ColorGradient</showItem>
+<showItem>Data</showItem>
+<showItem>PointInfo</showItem>
+</showItems>
+</legend>
+<legend key="LeverageGraph" title="Design-Expert® Software">
+<dock type="TopLeft"/>
+<showItems>
+<showItem>Response</showItem>
+<showItem>Info</showItem>
+<showItem>ColorGradient</showItem>
+<showItem>Data</showItem>
+<showItem>PointInfo</showItem>
+</showItems>
+</legend>
+<legend key="RunsVsDFFITSGraph" title="Design-Expert® Software">
+<dock type="TopLeft"/>
+<showItems>
+<showItem>Response</showItem>
+<showItem>Info</showItem>
+<showItem>ColorGradient</showItem>
+<showItem>Data</showItem>
+<showItem>PointInfo</showItem>
+</showItems>
+</legend>
+<colorBy type="response" index="0"/>
+</graphArea>
+<graphArea name="Model" index="0" graph="0">
+<graphMethod>OneFactor</graphMethod>
+<space>
+<codedPoint>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+</codedPoint>
+<axis index="0">0</axis>
+<axis index="1">-1</axis>
+<axis index="2">-1</axis>
+<axis index="3">-1</axis>
+</space>
+<legend key="2" title="Design-Expert® Software">
+<dock type="TopLeft"/>
+<showItems>
+<showItem>Response</showItem>
+<showItem>Info</showItem>
+<showItem>ColorGradient</showItem>
+<showItem>Data</showItem>
+<showItem>PointInfo</showItem>
+</showItems>
+</legend>
+</graphArea>
+<graphArea name="EffectsNoRestriction" graph="0"/>
+<graphArea name="EffectsNoRestriction" graph="1"/>
+<graphArea name="EffectsNoRestriction" graph="2"/>
+<graphArea name="GraphicalOptimization">
+<graphMethod>Contour</graphMethod>
+<space>
+<codedPoint>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+</codedPoint>
+<axis index="0">0</axis>
+<axis index="1">1</axis>
+<axis index="2">-1</axis>
+<axis index="3">-1</axis>
+</space>
+</graphArea>
+<graphArea name="NumericalOptimization">
+<graphMethod>Contour</graphMethod>
+<space>
+<codedPoint>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+<codedValue>0</codedValue>
+</codedPoint>
+<axis index="0">0</axis>
+<axis index="1">1</axis>
+<axis index="2">-1</axis>
+<axis index="3">-1</axis>
+</space>
+</graphArea>
+</graphSettings>
+<perspectives>
+<report name="diagnostics_notebook_Print Time" width="1920" height="1080">9a599fd0606fe319002eefe300000002=+0|9a59aa10606fe319002ef05600000003=+1,2,6|9a599590606fe319002ef05a00000004=+4,5|9a599300606fe319002ef05f00000005=*3,7,8,9,10@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=9a599fd0606fe319002eefe300000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=844;besth=440;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=9a59aa10606fe319002ef05600000003;caption=;state=2098172;dir=2;layer=4;row=0;pos=0;prop=100000;bestw=852;besth=440;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=9a599590606fe319002ef05a00000004;caption=;state=2098172;dir=3;layer=5;row=0;pos=0;prop=100000;bestw=848;besth=448;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=9a599300606fe319002ef05f00000005;caption=;state=2098172;dir=3;layer=5;row=0;pos=1;prop=100000;bestw=848;besth=448;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|dock_size(2,4,0)=854|dock_size(3,5,0)=450|</report>
+<report name="main_frame" width="1936" height="1056">layout2|name=main_toolbar;caption=Toolbar;state=2106108;dir=1;layer=10;row=0;pos=0;prop=100000;bestw=441;besth=37;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=start_screen;caption=;state=258;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=0;besth=0;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=navigation_tree;caption=Navigation Pane;state=5628;dir=4;layer=1;row=0;pos=0;prop=100000;bestw=200;besth=600;minw=40;minh=40;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=node_view;caption=;state=4352;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=16;besth=16;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Layout Tool;caption=;state=2110204;dir=1;layer=10;row=0;pos=443;prop=100000;bestw=242;besth=37;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(1,10,0)=39|dock_size(5,0,0)=10|dock_size(4,1,0)=200|</report>
+<report name="modelgraph_notebook_Print Time" width="1920" height="1080">9a599300606fe27d002c8ce300000002=*0@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=852;besth=448;minw=852;minh=448;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=9a599300606fe27d002c8ce300000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=1702;besth=894;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|</report>
+<report name="report_design_summary_" width="1920" height="1080">6fd458b0606fc33305dd086e00000002=*0|6fd4ec00606fc33305dd089400000003=+1,2@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=6fd458b0606fc33305dd086e00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=1710;besth=458;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=6fd4ec00606fc33305dd089400000003;caption=;state=2098172;dir=3;layer=2;row=0;pos=0;prop=100000;bestw=1710;besth=465;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|dock_size(3,2,0)=467|</report>
+<report name="report_reml_Print Time" width="1920" height="1080">9a59a4f0606fe2d8002df04f00000002=*0,1|9a599590606fe2d8002df0ac00000003=+2,3|9a59aca0606fe2d8002df0b000000004=+4,5,6@layout2|name=dummy;caption=;state=2098174;dir=3;layer=0;row=0;pos=0;prop=100000;bestw=180;besth=180;minw=180;minh=180;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=9a59a4f0606fe2d8002df04f00000002;caption=;state=2098172;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=844;besth=894;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=9a599590606fe2d8002df0ac00000003;caption=;state=2098172;dir=2;layer=3;row=0;pos=0;prop=100000;bestw=852;besth=444;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=9a59aca0606fe2d8002df0b000000004;caption=;state=2098172;dir=2;layer=3;row=0;pos=1;prop=100000;bestw=852;besth=444;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(5,0,0)=202|dock_size(2,3,0)=854|</report>
+</perspectives>
+</guiState>
+<designModel terms="16">
+<designTerm id="0" coef="1" term="Intercept"/>
+<designTerm id="1" coef="1" term="A"/>
+<designTerm id="2" coef="1" term="B"/>
+<designTerm id="3" coef="1" term="C"/>
+<designTerm id="4" coef="1" term="D"/>
+<designTerm id="5" coef="1" term="e"/>
+<designTerm id="6" coef="1" term="AB"/>
+<designTerm id="7" coef="1" term="AC"/>
+<designTerm id="8" coef="1" term="AD"/>
+<designTerm id="9" coef="1" term="Ae"/>
+<designTerm id="10" coef="1" term="BC"/>
+<designTerm id="11" coef="1" term="BD"/>
+<designTerm id="12" coef="1" term="Be"/>
+<designTerm id="13" coef="1" term="CD"/>
+<designTerm id="14" coef="1" term="Ce"/>
+<designTerm id="15" coef="1" term="De"/>
+</designModel>
+<run stdNo="5" dsnId="6" runNo="1" blockNo="0" blockName="Block 1" pointId="11" pointName="Factorial" buildPointId="0" buildPointName="Model" note="" rowStatus="Normal" groupId="1">
+<facActual id="A">5</facActual>
+<facActual id="B">15</facActual>
+<facActual id="C">215</facActual>
+<facActual id="D">Gyroid</facActual>
+<facActual id="e">0.4</facActual>
+<resVal id="1">23</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="6" dsnId="7" runNo="2" blockNo="0" blockName="Block 1" pointId="11" pointName="Factorial" buildPointId="0" buildPointName="Model" note="" rowStatus="Normal" groupId="1">
+<facActual id="A">2</facActual>
+<facActual id="B">15</facActual>
+<facActual id="C">235</facActual>
+<facActual id="D">Gyroid</facActual>
+<facActual id="e">0.4</facActual>
+<resVal id="1">18</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="3" dsnId="4" runNo="3" blockNo="0" blockName="Block 1" pointId="11" pointName="Factorial" buildPointId="0" buildPointName="Model" note="" rowStatus="Normal" groupId="1">
+<facActual id="A">2</facActual>
+<facActual id="B">85</facActual>
+<facActual id="C">215</facActual>
+<facActual id="D">Cubic</facActual>
+<facActual id="e">0.4</facActual>
+<resVal id="1">25</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="1" dsnId="2" runNo="4" blockNo="0" blockName="Block 1" pointId="11" pointName="Factorial" buildPointId="0" buildPointName="Model" note="" rowStatus="Normal" groupId="1">
+<facActual id="A">5</facActual>
+<facActual id="B">15</facActual>
+<facActual id="C">235</facActual>
+<facActual id="D">3D Honeycomb</facActual>
+<facActual id="e">0.4</facActual>
+<resVal id="1">24</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="4" dsnId="5" runNo="5" blockNo="0" blockName="Block 1" pointId="11" pointName="Factorial" buildPointId="0" buildPointName="Model" note="" rowStatus="Normal" groupId="1">
+<facActual id="A">2</facActual>
+<facActual id="B">15</facActual>
+<facActual id="C">215</facActual>
+<facActual id="D">3D Honeycomb</facActual>
+<facActual id="e">0.4</facActual>
+<resVal id="1">19</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="7" dsnId="8" runNo="6" blockNo="0" blockName="Block 1" pointId="11" pointName="Factorial" buildPointId="0" buildPointName="Model" note="" rowStatus="Normal" groupId="1">
+<facActual id="A">2</facActual>
+<facActual id="B">85</facActual>
+<facActual id="C">215</facActual>
+<facActual id="D">Gyroid</facActual>
+<facActual id="e">0.4</facActual>
+<resVal id="1">36</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="2" dsnId="3" runNo="7" blockNo="0" blockName="Block 1" pointId="11" pointName="Factorial" buildPointId="0" buildPointName="Model" note="" rowStatus="Normal" groupId="1">
+<facActual id="A">5</facActual>
+<facActual id="B">85</facActual>
+<facActual id="C">235</facActual>
+<facActual id="D">Gyroid</facActual>
+<facActual id="e">0.4</facActual>
+<resVal id="1">32</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="9" dsnId="10" runNo="8" blockNo="0" blockName="Block 1" pointId="11" pointName="Factorial" buildPointId="0" buildPointName="Model" note="" rowStatus="Normal" groupId="2">
+<facActual id="A">2</facActual>
+<facActual id="B">15</facActual>
+<facActual id="C">235</facActual>
+<facActual id="D">3D Honeycomb</facActual>
+<facActual id="e">0.6</facActual>
+<resVal id="1">14</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="13" dsnId="14" runNo="9" blockNo="0" blockName="Block 1" pointId="11" pointName="Factorial" buildPointId="0" buildPointName="Model" note="" rowStatus="Normal" groupId="2">
+<facActual id="A">2</facActual>
+<facActual id="B">85</facActual>
+<facActual id="C">215</facActual>
+<facActual id="D">3D Honeycomb</facActual>
+<facActual id="e">0.6</facActual>
+<resVal id="1">27</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="12" dsnId="13" runNo="10" blockNo="0" blockName="Block 1" pointId="11" pointName="Factorial" buildPointId="0" buildPointName="Model" note="" rowStatus="Normal" groupId="2">
+<facActual id="A">5</facActual>
+<facActual id="B">85</facActual>
+<facActual id="C">215</facActual>
+<facActual id="D">Cubic</facActual>
+<facActual id="e">0.6</facActual>
+<resVal id="1">18</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="11" dsnId="12" runNo="11" blockNo="0" blockName="Block 1" pointId="11" pointName="Factorial" buildPointId="0" buildPointName="Model" note="" rowStatus="Normal" groupId="2">
+<facActual id="A">2</facActual>
+<facActual id="B">85</facActual>
+<facActual id="C">235</facActual>
+<facActual id="D">Cubic</facActual>
+<facActual id="e">0.6</facActual>
+<resVal id="1">18</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="8" dsnId="9" runNo="12" blockNo="0" blockName="Block 1" pointId="11" pointName="Factorial" buildPointId="0" buildPointName="Model" note="" rowStatus="Normal" groupId="2">
+<facActual id="A">5</facActual>
+<facActual id="B">15</facActual>
+<facActual id="C">235</facActual>
+<facActual id="D">Gyroid</facActual>
+<facActual id="e">0.6</facActual>
+<resVal id="1">16</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="10" dsnId="11" runNo="13" blockNo="0" blockName="Block 1" pointId="11" pointName="Factorial" buildPointId="0" buildPointName="Model" note="" rowStatus="Normal" groupId="2">
+<facActual id="A">2</facActual>
+<facActual id="B">15</facActual>
+<facActual id="C">215</facActual>
+<facActual id="D">Gyroid</facActual>
+<facActual id="e">0.6</facActual>
+<resVal id="1">14</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="18" dsnId="19" runNo="14" blockNo="0" blockName="Block 1" pointId="11" pointName="Factorial" buildPointId="0" buildPointName="Model" note="" rowStatus="Normal" groupId="3">
+<facActual id="A">5</facActual>
+<facActual id="B">15</facActual>
+<facActual id="C">235</facActual>
+<facActual id="D">Cubic</facActual>
+<facActual id="e">0.6</facActual>
+<resVal id="1">16</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="14" dsnId="15" runNo="15" blockNo="0" blockName="Block 1" pointId="11" pointName="Factorial" buildPointId="0" buildPointName="Model" note="" rowStatus="Normal" groupId="3">
+<facActual id="A">2</facActual>
+<facActual id="B">85</facActual>
+<facActual id="C">235</facActual>
+<facActual id="D">Gyroid</facActual>
+<facActual id="e">0.6</facActual>
+<resVal id="1">14</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="15" dsnId="16" runNo="16" blockNo="0" blockName="Block 1" pointId="11" pointName="Factorial" buildPointId="0" buildPointName="Model" note="" rowStatus="Normal" groupId="3">
+<facActual id="A">5</facActual>
+<facActual id="B">85</facActual>
+<facActual id="C">215</facActual>
+<facActual id="D">Gyroid</facActual>
+<facActual id="e">0.6</facActual>
+<resVal id="1">20</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="19" dsnId="20" runNo="17" blockNo="0" blockName="Block 1" pointId="11" pointName="Factorial" buildPointId="0" buildPointName="Model" note="" rowStatus="Normal" groupId="3">
+<facActual id="A">5</facActual>
+<facActual id="B">85</facActual>
+<facActual id="C">235</facActual>
+<facActual id="D">3D Honeycomb</facActual>
+<facActual id="e">0.6</facActual>
+<resVal id="1">22</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="16" dsnId="17" runNo="18" blockNo="0" blockName="Block 1" pointId="11" pointName="Factorial" buildPointId="0" buildPointName="Model" note="" rowStatus="Normal" groupId="3">
+<facActual id="A">2</facActual>
+<facActual id="B">15</facActual>
+<facActual id="C">215</facActual>
+<facActual id="D">Cubic</facActual>
+<facActual id="e">0.6</facActual>
+<resVal id="1">14</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="17" dsnId="18" runNo="19" blockNo="0" blockName="Block 1" pointId="11" pointName="Factorial" buildPointId="0" buildPointName="Model" note="" rowStatus="Normal" groupId="3">
+<facActual id="A">5</facActual>
+<facActual id="B">15</facActual>
+<facActual id="C">215</facActual>
+<facActual id="D">3D Honeycomb</facActual>
+<facActual id="e">0.6</facActual>
+<resVal id="1">16</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="24" dsnId="25" runNo="20" blockNo="0" blockName="Block 1" pointId="11" pointName="Factorial" buildPointId="0" buildPointName="Model" note="" rowStatus="Normal" groupId="4">
+<facActual id="A">5</facActual>
+<facActual id="B">85</facActual>
+<facActual id="C">235</facActual>
+<facActual id="D">Cubic</facActual>
+<facActual id="e">0.4</facActual>
+<resVal id="1">26</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="22" dsnId="23" runNo="21" blockNo="0" blockName="Block 1" pointId="11" pointName="Factorial" buildPointId="0" buildPointName="Model" note="" rowStatus="Normal" groupId="4">
+<facActual id="A">5</facActual>
+<facActual id="B">85</facActual>
+<facActual id="C">215</facActual>
+<facActual id="D">3D Honeycomb</facActual>
+<facActual id="e">0.4</facActual>
+<resVal id="1">35</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="23" dsnId="24" runNo="22" blockNo="0" blockName="Block 1" pointId="11" pointName="Factorial" buildPointId="0" buildPointName="Model" note="" rowStatus="Normal" groupId="4">
+<facActual id="A">2</facActual>
+<facActual id="B">15</facActual>
+<facActual id="C">235</facActual>
+<facActual id="D">Cubic</facActual>
+<facActual id="e">0.4</facActual>
+<resVal id="1">18</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="21" dsnId="22" runNo="23" blockNo="0" blockName="Block 1" pointId="11" pointName="Factorial" buildPointId="0" buildPointName="Model" note="" rowStatus="Normal" groupId="4">
+<facActual id="A">5</facActual>
+<facActual id="B">15</facActual>
+<facActual id="C">235</facActual>
+<facActual id="D">Gyroid</facActual>
+<facActual id="e">0.4</facActual>
+<resVal id="1">23</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="25" dsnId="26" runNo="24" blockNo="0" blockName="Block 1" pointId="11" pointName="Factorial" buildPointId="0" buildPointName="Model" note="" rowStatus="Normal" groupId="4">
+<facActual id="A">2</facActual>
+<facActual id="B">85</facActual>
+<facActual id="C">235</facActual>
+<facActual id="D">3D Honeycomb</facActual>
+<facActual id="e">0.4</facActual>
+<resVal id="1">43</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<run stdNo="20" dsnId="21" runNo="25" blockNo="0" blockName="Block 1" pointId="11" pointName="Factorial" buildPointId="0" buildPointName="Model" note="" rowStatus="Normal" groupId="4">
+<facActual id="A">5</facActual>
+<facActual id="B">15</facActual>
+<facActual id="C">215</facActual>
+<facActual id="D">Cubic</facActual>
+<facActual id="e">0.4</facActual>
+<resVal id="1">23</resVal>
+<resVal id="2">Missing</resVal>
+</run>
+<responseModel rmId="1" analysisUuId="85b7a51d-622d-4955-b9b8-3a87f14154b4" name="Print Time">
+<response id="1" responseUuId="c8053a03-f76f-4310-827d-b2e92bab21a2" modelBase="Factorial" stdDevSource="ANOVA" stdDev="4.24499846259332" estimateMethod="REML"/>
+<transform id="0" name="None" successLevel="1"/>
+<compModel modelType="Factorial" calcType="CodedCalc" hierarchicalActual="false" terms="6">
+<equationTerm id="0" coef="22.1505376344089" term="Intercept"/>
+<equationTerm id="1" coef="0.483870967741242" term="A"/>
+<equationTerm id="2" coef="4.18279569892438" term="B"/>
+<equationTerm id="3" coef="-0.349462365592827" term="C"/>
+<equationTerm id="4" coef="-0.44892473117943" term="D"/>
+<equationTerm id="5" coef="-2.40053763441162" term="e"/>
+<equationTerm id="6" term="Curvature"/>
+</compModel>
+</responseModel>
+<responseModel rmId="2" analysisUuId="50be49ad-c628-4838-939d-311521c18947" name="Ultimate Strength">
+<response id="2" responseUuId="a487bd57-afd7-47bd-9d1a-cd81d40171a7" modelBase="Factorial" stdDevSource="ANOVA" stdDev="Missing" estimateMethod="REML"/>
+<transform id="0" name="None" successLevel="1"/>
+</responseModel>
+<optimization models="9">
+<criteria modType="Factor" id="1" goal="InRange" type="Categoric" target="0" limitLow="0" limitHigh="1" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Actual" scale="Transform" displayScale="Original"/>
+<criteria modType="Factor" id="2" goal="InRange" type="Categoric" target="0" limitLow="0" limitHigh="1" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Actual" scale="Transform" displayScale="Original"/>
+<criteria modType="Factor" id="3" goal="InRange" type="Categoric" target="0" limitLow="0" limitHigh="1" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Actual" scale="Transform" displayScale="Original"/>
+<criteria modType="Factor" id="4" goal="InRange" type="Categoric" target="0" limitLow="0" limitHigh="2" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Actual" scale="Transform" displayScale="Original"/>
+<criteria modType="Factor" id="5" goal="InRange" type="Categoric" target="0" limitLow="0" limitHigh="1" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Actual" scale="Transform" displayScale="Original"/>
+<criteria modType="Response" id="1" goal="None" type="Numeric" target="28.5" limitLow="14" limitHigh="43" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Actual" scale="Transform" displayScale="Original" responseUuId="c8053a03-f76f-4310-827d-b2e92bab21a2" rmId="1" analysisUuId="85b7a51d-622d-4955-b9b8-3a87f14154b4"/>
+<criteria modType="POE" id="1" goal="None" type="Numeric" target="Missing" limitLow="Missing" limitHigh="Missing" weightLow="1" weightHigh="1" overlayLow="Missing" overlayHigh="Missing" importance="3" coding="Coded" scale="Transform" displayScale="Original" responseUuId="c8053a03-f76f-4310-827d-b2e92bab21a2" rmId="1" analysisUuId="85b7a51d-622d-4955-b9b8-3a87f14154b4"/>
+</optimization>
+<buildInfo noOfReplicates="0" coordinateExchange="true" pointExchange="true" noOfLackOfFit="0" noOfModelPoints="25" optimality="I-optimal" candMethodUsed="Coordinate Exchange" modelPointTypeUsed="IOptimal" successfulAttempts="10" forceCategoricBalance="false" processOrder="2FI" buildTime="165" buildSeed="-1166057425" noOfGroups="4" varianceRatio="1"/>
+</DEXXMLDoc>

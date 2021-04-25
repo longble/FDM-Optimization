@@ -3,9 +3,9 @@ Objective: Optimize 3D print time while maximizing strength.
 Responses: Print Time (Minutes), 
 	   Stress (Pa)
 
-Factors: Number of outer shells (2-5)
-	 Infill % (15%-85%)
-	 Infill Pattern (Honeycomb, Gyroid) 
+Factors: Number of outer shells (2-4)
+	 Infill % (10%-40%)
+	 Infill Pattern (Cubic, Gyroid) 
 	 Extrusion Temperature (215-230C)
 	 Nozzle Diameter (0.4mm, 0.6mm)
 
@@ -14,10 +14,4 @@ Standard Filament: PLA
 Filament will be dried at 55C for 24 hours prior to printing.
 Speed of tensile testing: 5mm/min
 
-Design Options: Full Factorial
-		2^5 factorial design
-
-		2^5-1 Resolution V
-
-		2^5-2 Resolution III
-	
+Design: Split-Plot Design - Nozzle Diameter HTC
